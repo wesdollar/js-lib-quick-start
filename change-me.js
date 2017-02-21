@@ -14,9 +14,9 @@ app = (function () {
 
             hook: function (hookKey, el) {
 
-                if (collapseMe.hooks[hookKey] !== null && collapseMe.isFunction(collapseMe.hooks[hookKey])) {
+                if (app.hooks[hookKey] !== null && app.isFunction(app.hooks[hookKey])) {
 
-                    return collapseMe.hooks[hookKey](el);
+                    return app.hooks[hookKey](el);
                 }
             }
         },
